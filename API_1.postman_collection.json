@@ -1,0 +1,124 @@
+{
+	"info": {
+		"_postman_id": "d7894dec-0a04-4582-a861-2af08d53ee6c",
+		"name": "API_1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "48307695",
+		"_collection_link": "https://adrianpereyra59-903643.postman.co/workspace/UTN_PWA_BE~2f5ff6c2-7ab6-49f2-adad-64792e72512f/collection/48307695-d7894dec-0a04-4582-a861-2af08d53ee6c?action=share&source=collection_link&creator=48307695"
+	},
+	"item": [
+		{
+			"name": "/api/workspace",
+			"item": [
+				{
+					"name": "obtener workspaces",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "obtener workspaces por id",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Crear Workspaces",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{URL_API_1}}/api/workspaces/",
+							"host": [
+								"{{URL_API_1}}"
+							],
+							"path": [
+								"api",
+								"workspaces",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "/api/auth",
+			"item": [
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"username\": \"testuser\",\r\n  \"email\": \"test@example.com\",\r\n  \"password\": \"12345678\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL_API_1}}/api/auth/register",
+							"host": [
+								"{{URL_API_1}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Get a /test",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "status",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "obtener usuarios",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "obtener espacios de trabajo",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener usuario por id",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
